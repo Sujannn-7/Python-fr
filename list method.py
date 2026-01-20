@@ -1,0 +1,12 @@
+list = [1, 8, 9, 29, 28]
+list.sort()
+print(list)
+list.append(666)
+print(list)
+list.reverse()
+print(list)
+list.insert(2,727)
+print(list.pop(2))
+print(list)
+list.remove(666)
+print(list)
