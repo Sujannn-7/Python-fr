@@ -1,0 +1,16 @@
+hero= ("Captain America",)
+heroes = ("Iron Man", "Thor", "Hulk", "Antman")
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+print(heroes.count("Iron Man"))
+print(heroes.index("Thor"))
+concatenated = hero + heroes
+print(concatenated)
+print(numbers*2)
+print(sum(numbers))
+print(2 in numbers)
+a,b,c,d,e,f,g,h,i = numbers
+print(a,b,c)
+numbers2 =list(numbers)
+print(numbers2)
+numbers2.append(10)
+print(numbers2)
