@@ -17,8 +17,8 @@ if(your_input != "s" and your_input != "p" and your_input != "r"):
 
 
 else:
-    print(f"Computer Chose: {your_dict[computer]}")
-    print(f"You Chose: {your_dict[your_input]}")
+    print(f"Computer chose: {your_dict[computer]}")
+    print(f"You chose: {your_dict[your_input]}")
 
 
     if(computer == "r" and your_input == "p" ):
