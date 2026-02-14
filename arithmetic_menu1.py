@@ -17,7 +17,7 @@ def menu(n):
             return "Please, enter a number from 1-4"
 
 
-if __name__ == "__main__":
+
     n = int(input("""
     ===========Arithmetic Menu===========
     1. --------> Addition
