@@ -1,7 +1,7 @@
 def menu(n):
     a = int(input("Enter a number: "))
     b = int(input("Enter another number: "))
-    match n:
+    match n: 
         case 1:
             return f"The sum is: {a+b}" 
         case 2:
@@ -17,13 +17,6 @@ def menu(n):
             return "Please, enter a number from 1-4"
 
 
-if __name__ == "__main__":
-    n = int(input("""
-    ===========Arithmetic Menu===========
-    1. --------> Addition
-    2. --------> Subtraction
-    3. --------> Multiplication
-    4. --------> Division
-                        
-    Select a choice: """))
-    print(menu(n))
+n = int(input("Enter a number between (1-4): "))
+print(menu(n))
+    
