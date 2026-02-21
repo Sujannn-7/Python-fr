@@ -4,7 +4,13 @@ import pyttsx3
 
 
 recognizer = sr.Recognizer()
-engine = pyttsx3.init()
+engine = pyttsx3.init('sapi5')
+
+voices = engine.getProperty('voices')
+for voice in voices:
+    if "male" in voice.name.lower() or "david" in voice.name.lower():
+        engine.setProperty('voice', voice.id)
+        break
 
 def speak(text):
     engine.say(text)
@@ -34,6 +40,7 @@ def processCommand(c):
 
 if __name__ == "__main__":
     speak("Initialising Jarvis...")
+    speak("Hello")
     
     while True:     
         print("recognizing")
@@ -43,7 +50,7 @@ if __name__ == "__main__":
                 recognizer.adjust_for_ambient_noise(source, duration=1)
                 audio = recognizer.listen(source)
             command = recognizer.recognize_google(audio)
-            if (command.lower() == "jarvis"):
+            if "jarvis" in command.lower():
                 speak("Yeah")
 
                 with sr.Microphone() as source:
