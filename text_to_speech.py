@@ -1,4 +1,5 @@
 import pyttsx3
 engine = pyttsx3.init()
-engine.say("Hey everyone, my name is Peter Parker")
+text = input("Enter something as input: ")
+engine.say(text)
 engine.runAndWait()
